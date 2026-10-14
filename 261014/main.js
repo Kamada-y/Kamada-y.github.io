@@ -11,7 +11,6 @@ console.log(num3/2);
 console.log(num3%2);
 console.log(num3**2);
 
-
 let num4 =280;
 let num5 =123;
 let num6 = num4 + num5;
