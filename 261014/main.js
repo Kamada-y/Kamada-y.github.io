@@ -19,5 +19,5 @@ console.log(num6*3);
 console.log(Math.floor(num6*3%4));
 
 console.log("num6");
-console.log("num6"*"3");
-console.log(Math.floor("num6"*"3"%"4"));
+console.log("num6"*3);
+console.log(Math.floor("num6"*3%4));
