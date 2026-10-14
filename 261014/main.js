@@ -16,8 +16,8 @@ let num5 =123;
 let num6 = num4 + num5;
 console.log(num6);
 console.log(num6*3);
-console.log(Math.floor(num6*3%4));
+console.log(Math.floor(num6*3/4));
 
 console.log("num6");
 console.log("num6"*3);
-console.log(Math.floor("num6"*3%4));
+console.log(Math.floor("num6"*3/4));
