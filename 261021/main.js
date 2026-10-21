@@ -60,8 +60,8 @@ function judgeAge(age){
     else {
         result="成人";
     }
+    console.log(`${age}歳は${result}です`);
 }
-console.log(`${age}歳は${result}です`);
 
 judgeAge(-1);
 judgeAge(10);
@@ -83,8 +83,9 @@ function judgeYear(year){
     else {
         result="365日";
     }
+    console.log(`${year}年は${reslut}です`);
+
 }
-console.log(`${year}年は${reslut}です`);
 judgeYear(1932);
 judgeYear(2024);
 judgeYear(2007);
