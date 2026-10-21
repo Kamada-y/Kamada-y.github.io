@@ -36,7 +36,7 @@ function splitBill(total,people){
 
 }
 console.log(splitbill(3000,3));
-console.log(splitbill(5000,3));
+console.log(splitbill(5000,6));
 
 
 function judgeage(age){
