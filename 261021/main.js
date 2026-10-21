@@ -9,6 +9,7 @@ console.log(typeof 123)
 let x;
 console.log(x);
 
+//演習2
 function saywelcome(name){
     console.log(name +"さん、ようこそ");
 }
@@ -24,10 +25,14 @@ console.log("------------");
 saywelcome2("かつお","野球");
 saywelcome2("わかめ","ゴム飛び");
 saywelcome2("たらお","お絵描き");
+saywelcome();
+saywelcome2();
 
-function multiply(num1,num2){
-    return num1*num2;
+//演習３
+function multiply(a,b){
+    return a*b;
 }
+
 console.log(multiply(3,4));
 console.log(multiply(3,10));
 
@@ -35,8 +40,8 @@ function splitBill(total,people){
     return Math.ceil(total/people);
 
 }
-console.log(splitbill(3000,3));
-console.log(splitbill(5000,6));
+console.log(splitBill(3000,3));
+console.log(splitBill(5000,6));
 
 
 function judgeage(age){
