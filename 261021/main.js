@@ -53,6 +53,7 @@ function judgeage(age){
         return"成人";
     }
 }
+console.log(`${age}歳は${result}です`);
 
 let name ="成人";
 let age =20;
