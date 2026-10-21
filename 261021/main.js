@@ -46,7 +46,7 @@ console.log(splitBill(5000,6));
 
 
 //演習4
-function judgeage(age){
+function judgeAge(age){
     if (age<=0){
         result= "エラー";
     }
@@ -62,13 +62,13 @@ function judgeage(age){
 }
 console.log(`${age}歳は${result}です`);
 
-judgeage(-1);
-judgeage(10);
-judgeage(45);
-judgeage(80);
+judgeAge(-1);
+judgeAge(10);
+judgeAge(45);
+judgeAge(80);
 
 //演習4発展
-function judgeyear(year){
+function judgeYear(year){
     if(year %400 === 0){
         result="366日";
     }
@@ -83,7 +83,7 @@ function judgeyear(year){
     }
 }
 console.log(`${year}年は${reslut}です`);
-judgeage(1932);
-judgeage(2024);
-judgeage(2007);
-judgeage(1100);
+judgeYear(1932);
+judgeYear(2024);
+judgeYear(2007);
+judgeYear(1100);
