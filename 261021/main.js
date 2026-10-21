@@ -24,3 +24,17 @@ console.log("------------");
 saywelcome2("かつお","野球");
 saywelcome2("わかめ","ゴム飛び");
 saywelcome2("たらお","お絵描き");
+
+function multiply(num1,num2){
+    return num1*num2;
+}
+console.log(multiply(3,4));
+console.log(multiply(3,10));
+
+function splitBill(total,people){
+    return Math.ceil(total/people);
+
+}
+console.log(splitbill(3000,3));
+console.log(splitbill(5000,3));
+
