@@ -78,12 +78,12 @@ function judgeYear(year){
         result="365日";
     }
     else if(year %4 === 0){
-        reslut="366日";
+        result="366日";
     }
     else {
         result="365日";
     }
-    console.log(`${year}年は${reslut}です`);
+    console.log(`${year}年は${result}です`);
 
 }
 judgeYear(1932);
