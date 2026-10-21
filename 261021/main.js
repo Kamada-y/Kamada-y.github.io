@@ -47,6 +47,7 @@ console.log(splitBill(5000,6));
 
 //演習4
 function judgeAge(age){
+    let result;
     if (age<=0){
         result= "エラー";
     }
@@ -69,6 +70,7 @@ judgeAge(80);
 
 //演習4発展
 function judgeYear(year){
+    let result;
     if(year %400 === 0){
         result="366日";
     }
