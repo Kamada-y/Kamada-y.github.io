@@ -41,24 +41,21 @@ console.log(splitbill(5000,3));
 
 function judgeage(age){
     if (age<=0){
-        return "エラー";
+        result= "エラー";
     }
     else if (age<18){
-        return"未成年";
+        result="未成年";
     }
     else if(age>=65){
-        return"高齢者";
+        result="高齢者";
     }
     else {
-        return"成人";
+        result="成人";
     }
 }
 console.log(`${age}歳は${result}です`);
 
-let name ="成人";
-let age =20;
-console.log(name+"さんは"+ age +"歳です");
-console.log(`${name}さんは${age}歳です`);
-function greet(name){
-    return `ようこそ、${name}さん`;
-}
+judgeage(-1);
+judgeage(10);
+judgeage(45);
+judgeage(80);
