@@ -1,3 +1,4 @@
+//演習１
 let name= "YuzukaKAmada";
 let num= 3;
 console.log("name");
@@ -44,6 +45,7 @@ console.log(splitBill(3000,3));
 console.log(splitBill(5000,6));
 
 
+//演習4
 function judgeage(age){
     if (age<=0){
         result= "エラー";
@@ -64,3 +66,5 @@ judgeage(-1);
 judgeage(10);
 judgeage(45);
 judgeage(80);
+
+//演習4発展
