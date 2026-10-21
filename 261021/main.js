@@ -68,3 +68,22 @@ judgeage(45);
 judgeage(80);
 
 //演習4発展
+function judgeyear(year){
+    if(year %400 === 0){
+        result="366日";
+    }
+    else if(year %100 === 0){
+        result="365日";
+    }
+    else if(year %4 === 0){
+        reslut="366日";
+    }
+    else {
+        result="365日";
+    }
+}
+console.log(`${year}年は${reslut}です`);
+judgeage(1932);
+judgeage(2024);
+judgeage(2007);
+judgeage(1100);
