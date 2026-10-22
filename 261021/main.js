@@ -1,7 +1,7 @@
 //演習１
-let name= "YuzukaKAmada";
+let name= "鎌田柚香";
 let num= 3;
-console.log("name");
+console.log("鎌田柚香");
 console.log(num);
 num= 4;
 console.log(num);
