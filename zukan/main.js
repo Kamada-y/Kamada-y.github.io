@@ -79,7 +79,7 @@ function render() {
             //"見つかりませんでした"以外は画像を表示//
             let imageTag = `<img src="${character.image}" class="card-img">`;
             characterList.innerHTML += `
-            <div class="col-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="card h-100 position-relative">
                     ${imageTag}
                     <div class="card-body text-center">
