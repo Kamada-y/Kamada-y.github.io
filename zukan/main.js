@@ -56,7 +56,7 @@ function render() {
     });
 
 
-    // 2. 新しい配列の並べ替え→絞り込み検索策作成//
+    // 2. 新しい配列の並べ替え→絞り込み検索作成//
     if (sortOrder === "attackDesc") {
         visibleCharacters.sort((a, b) => b.attack - a.attack);
     }else if(sortOrder === "attackAsc"){
