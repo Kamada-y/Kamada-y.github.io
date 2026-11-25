@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    }
+
+    /* 自動入力項目（readonly）の見た目調整 */
+    input[readonly] {
+    cursor: not-allowed;
+    color: #495057;
+    }
+
+    /* メッセージ欄の高さを確保してレイアウトのガタつきを防止 */
+    #message {
+    min-height: 1.5rem;
+    font-weight: 500;
+    }
+
+</style>
+
+   
+
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-primary text-white py-3">
+                        <h1 class="h5 mb-0 fw-bold">会員登録（住所入力）</h1>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="text-muted small mb-4">
+                        郵便番号を入力して「住所検索」ボタンを押すと、都道府県〜町域まで自動入力されます。
+                        </p>
+
+                        <form id="registerForm" novalidate>
+                        <!-- 郵便番号入力欄 & 検索ボタン -->
+                        <div class="mb-3">
+                        <label for="zipcode" class="form-label fw-bold">郵便番号 <span class="badge bg-danger ms-1">必須</span></label>
+                        <div class="input-group">
+                        <input type="text" class="form-control" id="zipcode" placeholder="例：1000001 または 100-0001" maxlength="8">
+                        <button class="btn btn-outline-primary" type="button" id="searchBtn">
+                            住所検索
+                        </button>
+                        </div>
+                        <!-- メッセージ欄 -->
+                        <div id="message" class="form-text mt-2" aria-live="polite"></div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <!-- 都道府県 -->
+                        <div class="mb-3">
+                            <label for="prefecture" class="form-label fw-bold">都道府県</label>
+                            <input type="text" class="form-control bg-light" id="prefecture" placeholder="自動入力されます" readonly>
+                        </div>
+
+                        <!-- 市区町村 -->
+                        <div class="mb-3">
+                            <label for="city" class="form-label fw-bold">市区町村</label>
+                            <input type="text" class="form-control bg-light" id="city" placeholder="自動入力されます" readonly>
+                        </div>
+
+                        <!-- 町域 -->
+                        <div class="mb-3">
+                            <label for="town" class="form-label fw-bold">町域</label>
+                            <input type="text" class="form-control" id="town" placeholder="自動入力されます">
+                        </div>
+
+                        <!-- 番地・建物名 -->
+                        <div class="mb-4">
+                            <label for="street" class="form-label fw-bold">番地・建物名 <span class="badge bg-danger ms-1">必須</span></label>
+                            <input type="text" class="form-control" id="street" placeholder="例：1-1-1 千代田ビル101">
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">登録する</button>
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="main.js"></script>
+</html>
